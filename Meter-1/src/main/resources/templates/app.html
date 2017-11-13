@@ -1,0 +1,24 @@
+<div id="body">
+    <div class="left">
+      <p>Meter list</p> 
+      <!-- <p> -->
+        <div class="input-group input-daterange">
+          <input type="date" class="form-control" value="2012-04-05"/>
+          <div class="input-group-addon">-</div>
+          <input type="date" class="form-control" value="2012-04-19"/>
+        </div>  
+      <!-- </p> -->
+      <!-- <input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker.date" /> -->
+      <ul>
+        <li>CODE01-METER 01</li>
+        <li>CODE01-METER 01</li>
+        <li>{{ctr.value}}</li>
+        <li ng-repeat='u in ctrl.getAllMeter()'>{{u.code}}</li>
+      </ul>
+      <div class="plus">
+        <p>+</p>
+      </div>
+    </div>
+    <div class="right">
+  
+    </div>

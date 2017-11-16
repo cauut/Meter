@@ -1,0 +1,21 @@
+---
+server:
+  port: 8080
+  contextPath: /IOT
+---
+spring:
+  profiles: local, default
+  data:
+    cassandra:
+      keyspace-name: meter
+      
+      contact-points: 127.0.0.1
+      port: 9042
+---
+spring:
+  profiles: prod
+  data:
+    cassandra:
+      keyspace-name: meter
+      contact-points: 127.0.0.1
+      port: 9042
